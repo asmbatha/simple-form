@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Meat Brothers Butchery</title>
+		<script src = "script.js"></script>
+
+	</head>
+	<style>
+			html{
+				font-family: Gill Sans Extrabold, sans-serif;
+			}
+
+            form {
+                max-width: 500px;              
+                line-height: 30px;
+                font-size: 16px;
+            }
+
+            input[type=text], input[type=email] {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 12px;
+                border-radius: 5px;
+                border: 1px solid #CCC;
+                height: 48px;
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+			
+			.countryList {
+				box-sizing: border-box;
+				width: 100%;
+				padding: 12px;
+				border-radius: 5px;
+				border: 1px solid #CCC;
+				height: 48px;
+				font-size: 14px;
+				margin-bottom: 8px;
+			}
+			
+			textarea {
+				box-sizing: border-box;
+				width: 100%;
+				padding: 15;
+				border-radius: 5px;
+				border: 1px solid #CCC;
+				height: 150px;
+				margin-bottom: 8px;
+			}
+
+            input[type=submit] {
+                display: block;
+                color: white;
+                box-sizing: border-box;
+                height: 44px;
+                font-size: 14px;
+                padding: 0px 20px;
+                background: #4baf50;
+                border-radius: 5px;
+                margin-top: 8px;
+            }
+    </style>
+	
+	
+	<body>
+		<h2>Meat Brothers Butchery</h2>
+		<p>A place for meat lovers...</p>
+	
+        <form id="form" action="#">
+		<fieldset>
+			<legend>Contact Form</legend>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name..."/>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Your Email..."/>
+
+            <label for="countryList">Country</label></br>
+            <select class = "countryList" id = "countryList">
+				<option value = "0">Select</option>
+				<option value = "1">South Africa</option>
+				<option value = "2">UK</option>
+				<option value = "3">USA</option>
+			</select>
+			</br>
+			
+            <label for="message">Message</label>
+			<textarea id = "message" name = "story" placeholder = "Your message..."></textarea>
+
+
+            <input type="submit">
+		</fieldset>
+        </form>
+    </body>
+	
+
+
+
+</html>
